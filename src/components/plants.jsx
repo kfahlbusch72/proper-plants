@@ -1,0 +1,16 @@
+import PLANTS from "../data";
+
+function PLANTS({ plants, addCart }) {
+  return (
+    <>
+      <h2>Plants</h2>
+      <>
+        {plants.map((plant) => (
+          <Plant key={plant.id} plant={plant} addCart={addCart} />
+        ))}
+      </>
+    </>
+  );
+}
+
+export default PLANTS;
