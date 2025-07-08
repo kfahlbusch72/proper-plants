@@ -7,7 +7,7 @@ function Cart({ cart, addCart, removeCart }) {
         <p>Nothing in cart.</p>
       ) : (
         <>
-          {cart.map((cart) => {
+          {cart.map((item) => {
             return (
               <div key={item.id}>
                 <button
