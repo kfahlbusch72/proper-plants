@@ -9,20 +9,20 @@ function Cart({ cart, addCart, removeCart }) {
         <>
           {cart.map((cart) => {
             return (
-              <div key={cart.id}>
+              <div key={item.id}>
                 <button
                   onClick={() => {
-                    removeCart(cart);
+                    removeCart(item);
                   }}
                   style={{ color: "red" }}
                 >
                   -
                 </button>{" "}
                 <span>
-                  {cart.plantName}: {cart.quantity} cart
+                  {item.image} {item.name}: {item.quantity}
                 </span>{" "}
                 <button
-                  onClick={() => addCart(cart)}
+                  onClick={() => addCart(item)}
                   style={{ color: "green" }}
                 >
                   +

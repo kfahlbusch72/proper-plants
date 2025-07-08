@@ -1,7 +1,9 @@
 export default function Plant({ plant, addCart }) {
   return (
     <div>
-      <b>{plant.plantName}</b>{" "}
+      <b>
+        {plant.image} {plant.Name}
+      </b>{" "}
       <button onClick={() => addCart(plant)}>Add Plants</button>
     </div>
   );

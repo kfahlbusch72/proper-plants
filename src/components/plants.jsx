@@ -1,4 +1,4 @@
-import Plants from "../data";
+import Plant from "./plant";
 
 function Plants({ plants, addCart }) {
   return (
@@ -13,4 +13,4 @@ function Plants({ plants, addCart }) {
   );
 }
 
-export default PLANTS;
+export default Plants;
