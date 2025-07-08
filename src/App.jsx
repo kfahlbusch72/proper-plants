@@ -38,10 +38,19 @@ function App() {
     decreaseQuantity(plant.id);
   };
 
+  const clearCart = () => {
+    setCart([]); // empties the cart
+  };
+
   return (
     <>
       <Plants plants={PLANTS} addCart={addCart} />
-      <Cart cart={cart} addCart={addCart} removeCart={removeCart} />
+      <Cart
+        cart={cart}
+        addCart={addCart}
+        removeCart={removeCart}
+        clearCart={clearCart}
+      />
     </>
   );
 }
