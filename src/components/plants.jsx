@@ -1,6 +1,6 @@
-import PLANTS from "../data";
+import Plants from "../data";
 
-function PLANTS({ plants, addCart }) {
+function Plants({ plants, addCart }) {
   return (
     <>
       <h2>Plants</h2>

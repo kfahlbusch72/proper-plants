@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import PLANTS from "./components/plants";
+import Plants from "./components/plants";
 import Cart from "./components/cart";
 import PLANTS from "./data";
 
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <PLANTS plants={PLANTS} addCart={addCart} />
+      <Plants plants={PLANTS} addCart={addCart} />
       <Cart cart={cart} addCart={addCart} removeCart={removeCart} />
     </>
   );
